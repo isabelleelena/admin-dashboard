@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 700px;
+}
+
+.sidebar {
+    background-color: #009fff;
+    grid-row: 1 / 3;
+}
+
+.header {
+    background-color: white;
+}
+
+.main-content {
+    background-color: gainsboro;
+}
