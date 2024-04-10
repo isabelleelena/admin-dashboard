@@ -23,6 +23,7 @@ p {
     font-family: "Roboto-regular", Arial, Helvetica, sans-serif;
     font-weight: bolder;
     height: 975px;
+    width: 1400px;
 }
 
 .sidebar {
@@ -188,13 +189,14 @@ input[type="search"] {
     align-items: center;
 }
 
-.upic,
-.gpic {
+.upic {
     width: 3rem;
     height: auto;
 }
 
 .gpic {
+    width: 4rem;
+    height: auto;
     grid-column: 1 / 2;
 }
 
@@ -206,7 +208,8 @@ input[type="search"] {
 }
 
 .hi-there {
-    font-size: .6rem;
+    font-size: .8rem;
+    margin: 2px;
 }
 
 input[type="button"] {
@@ -219,14 +222,16 @@ input[type="button"] {
 }
 
 h3 {
-    margin: 0px;
+    margin: 2px;
     font-size: 1rem;
+    color: #2e1065;
 }
 
 .card-text {
     font-size: .85rem;
     font-weight: lighter;
-    color: #4c1d957a;
+    color: #9478c7;
+    margin: 2px;
 }
 
 h2 {
@@ -236,6 +241,7 @@ h2 {
 .card-icon {
     height: 20px;
     width: auto;
+    filter: invert(9%) sepia(93%) saturate(3528%) hue-rotate(259deg) brightness(77%) contrast(102%);
 }
 
 .card-icons {
@@ -251,13 +257,19 @@ h2 {
 }
 
 h5 {
-    margin: 0px;
+    margin: 2px;
 }
 
 .main-right-side > div > div > div > p {
     font-size: .75rem;
     font-weight: lighter;
-    color: #4c1d957a;
+    color: #9478c7;
+    margin: 2px;
+}
+
+.main-right-side > div > div > div > div > p {
+    font-size: .75rem;
+    margin: 2px;
 }
 
 .announcements {
@@ -273,7 +285,7 @@ h5 {
 }
 
 .announcement-text,
-.trending-text {
+.trending-users {
     background-color: white;
     padding: 30px 28px 30px 20px;
     box-sizing: border-box;
@@ -285,13 +297,52 @@ h5 {
 .announcement-text {
     display: grid;
     grid-template-rows: 28% 28% 28%;
-    gap: 10%;
+    gap: 15px;
 }
 
 .ann-1 {
-    border-bottom: 1px solid #4c1d957a;
+    border-bottom: 1px solid #9478c7;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
 .ann-2 {
-    border-bottom: 1px solid #4c1d957a;;
+    border-bottom: 1px solid #9478c7;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
+
+.name {
+    font-size: 1.25rem;
+    margin: 2px;
+}
+
+.user-image {
+    height: 3rem;
+    width: auto;
+}
+
+.trending-user {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.trending-users {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 14px;
+}
+
+.trending-username {
+    font-weight: bolder;
+    color: #4c1d95;
+}
+
+.byline {
+    font-weight: lighter;
+    color: #9478c7;
+}
+
