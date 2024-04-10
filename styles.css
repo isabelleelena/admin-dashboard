@@ -178,6 +178,12 @@ input[type="search"] {
     border: 0px;
     height: 23px;
     background-color: #ddd6fe;
+    padding: 8px;
+    color: #4c1d95;
+}
+
+input[type="search"]:focus {
+    outline: 2px solid #a78bfa;
 }
 
 .bell {
@@ -219,6 +225,10 @@ input[type="button"] {
     border: 0px;
     background-color: #2e1065;
     color: #f5f3ff;
+}
+
+input[type="button"]:hover {
+    background-color: #7c3aed;
 }
 
 h3 {
